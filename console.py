@@ -122,7 +122,7 @@ class HBNBCommand(cmd.Cmd):
     def do_destroy(self, line):
         """Deletes an instance based on the class name and id.
         """
-        if line == "" or line is Noe:
+        if line == "" or line is None:
             print("** class name missing **")
         else:
             words = line.split(' ')
