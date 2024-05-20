@@ -2,10 +2,10 @@
 """Module for the entry point of the command interpreter."""
 
 import cmd
-from models.base_model import BaseModel
-from models import storage
 import re
 import json
+from models.base_model import BaseModel
+from models import storage
 
 
 class HBNBCommand(cmd.Cmd):
@@ -122,7 +122,7 @@ class HBNBCommand(cmd.Cmd):
     def do_destroy(self, line):
         """Deletes an instance based on the class name and id.
         """
-        if line == "" or line is None:
+        if line == "" or line is Noe:
             print("** class name missing **")
         else:
             words = line.split(' ')
