@@ -141,7 +141,7 @@ class TestCity_save(unittest.TestCase):
             self.assertIn(cyid, f.read())
 
 
-class TestCity_to_dict(unitest.TestCase):
+class TestCity_to_dict(unittest.TestCase):
     """Unittests for testing to_dict method of the City class."""
 
     def test_to_dict_type(self):
@@ -192,4 +192,4 @@ class TestCity_to_dict(unitest.TestCase):
 
 
 if __name__ == "__main__":
-    unittest.main()t
+    unittest.main()

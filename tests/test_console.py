@@ -57,7 +57,7 @@ class TestHBNBCommand_help(unittest.TestCase):
 
     def test_help_show(self):
         h = ("Usage: show <class> <id> or <class>.show(<id>)\n        "
-             "Display the string representaion of a class instance of"
+             "Display the string representation of a class instance of"
              " a given id.")
         with patch("sys.stdout", new=StringIO()) as output:
             self.assertFalse(HBNBCommand().onecmd("help show"))
@@ -1567,4 +1567,4 @@ class TestHBNBCommand_count(unittest.TestCase):
 
 
 if __name__ == "__main__":
-    unittest.main()t
+    unittest.main()

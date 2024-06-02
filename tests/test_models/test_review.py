@@ -135,7 +135,7 @@ class TestReview_save(unittest.TestCase):
         self.assertLess(second_updated_at, rv.updated_at)
 
     def test_save_with_arg(self):
-        rv = Review(
+        rv = Review()
         with self.assertRaises(TypeError):
             rv.save(None)
 
@@ -198,4 +198,4 @@ class TestReview_to_dict(unittest.TestCase):
 
 
 if __name__ == "__main__":
-    unittest.main())
+    unittest.main()
